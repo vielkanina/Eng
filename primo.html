@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geração Construtora - Construindo o Futuro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+        }
+        .hero-bg {
+            background-image: url('https://placehold.co/1920x1080/4c51bf/ffffff?text=Construindo+o+Futuro');
+            background-size: cover;
+            background-position: center;
+        }
+        .card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-700">Geração Construtora</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#inicio" class="text-gray-600 hover:text-indigo-700 transition duration-300">Início</a>
+                <a href="#servicos" class="text-gray-600 hover:text-indigo-700 transition duration-300">Serviços</a>
+                <a href="#portfolio" class="text-gray-600 hover:text-indigo-700 transition duration-300">Portfólio</a>
+                <a href="#depoimentos" class="text-gray-600 hover:text-indigo-700 transition duration-300">Depoimentos</a>
+                <a href="#contato" class="text-white bg-indigo-600 px-4 py-2 rounded-full hover:bg-indigo-700 transition duration-300">Contato</a>
+            </div>
+            <button id="menu-toggle" class="md:hidden text-gray-600 hover:text-indigo-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg py-4">
+            <a href="#inicio" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Início</a>
+            <a href="#servicos" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Serviços</a>
+            <a href="#portfolio" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Portfólio</a>
+            <a href="#depoimentos" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Depoimentos</a>
+            <a href="#contato" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Contato</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-bg h-screen flex items-center justify-center text-center text-white relative">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="container mx-auto px-4 z-10">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Construindo o Futuro, Tijolo por Tijolo.</h1>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">
+                Excelência em engenharia e construção civil para projetos residenciais, comerciais e industriais.
+            </p>
+            <a href="#contato" class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105">
+                Solicite um Orçamento
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-indigo-700">Nossos Serviços</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+                Oferecemos uma gama completa de serviços de construção, garantindo qualidade, segurança e inovação em cada etapa.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-100 p-8 rounded-lg shadow-md card">
+                    <img src="https://placehold.co/100x100/4c51bf/ffffff?text=Casa" alt="Construção Residencial" class="w-20 h-20 mx-auto mb-4 rounded-full">
+                    <h3 class="text-xl font-semibold mb-2">Construção Residencial</h3>
+                    <p class="text-gray-600">Projetamos e construímos casas que refletem seus sonhos e necessidades, com foco em conforto e durabilidade.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-gray-100 p-8 rounded-lg shadow-md card">
+                    <img src="https://placehold.co/100x100/4c51bf/ffffff?text=Edifício" alt="Construção Comercial" class="w-20 h-20 mx-auto mb-4 rounded-full">
+                    <h3 class="text-xl font-semibold mb-2">Construção Comercial</h3>
+                    <p class="text-gray-600">Espaços comerciais inovadores e funcionais, construídos para impulsionar o seu negócio.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-gray-100 p-8 rounded-lg shadow-md card">
+                    <img src="https://placehold.co/100x100/4c51bf/ffffff?text=Reforma" alt="Reformas e Manutenção" class="w-20 h-20 mx-auto mb-4 rounded-full">
+                    <h3 class="text-xl font-semibold mb-2">Reformas e Manutenção</h3>
+                    <p class="text-gray-600">Revitalizamos ambientes e estruturas, garantindo que suas propriedades se mantenham em perfeito estado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-indigo-700">Nosso Portfólio</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+                Conheça alguns dos nossos projetos mais notáveis que demonstram nossa paixão por construir.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+                    <img src="https://placehold.co/600x400/3182ce/ffffff?text=Projeto+Residencial" alt="Projeto Residencial de Luxo" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Residencial Solar</h3>
+                        <p class="text-gray-600">Uma casa moderna com design sustentável em uma localização privilegiada.</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+                    <img src="https://placehold.co/600x400/4fd1c5/ffffff?text=Edifício+Comercial" alt="Edifício Comercial Moderno" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Corporate Center</h3>
+                        <p class="text-gray-600">Um edifício de escritórios de alta tecnologia no centro da cidade.</p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+                    <img src="https://placehold.co/600x400/9f7aea/ffffff?text=Condomínio" alt="Complexo de Condomínios" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Condomínio Vista Alegre</h3>
+                        <p class="text-gray-600">Um complexo residencial completo com áreas de lazer e segurança.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="depoimentos" class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-indigo-700">O que nossos clientes dizem</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+                A satisfação dos nossos clientes é a nossa maior conquista. Veja o que eles têm a dizer sobre nosso trabalho.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Depoimento 1 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <p class="text-gray-600 italic mb-4">"A Geração Construtora transformou nosso projeto em realidade, superando todas as expectativas. O profissionalismo e a dedicação da equipe são incomparáveis."</p>
+                    <p class="font-semibold text-indigo-700">- João Silva</p>
+                    <p class="text-sm text-gray-500">Proprietário Residencial</p>
+                </div>
+                <!-- Depoimento 2 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <p class="text-gray-600 italic mb-4">"O projeto do nosso novo escritório foi executado com pontualidade e excelência. A atenção aos detalhes foi impressionante. Recomendo 100%!"</p>
+                    <p class="font-semibold text-indigo-700">- Maria Santos</p>
+                    <p class="text-sm text-gray-500">CEO, Tech Solutions</p>
+                </div>
+                <!-- Depoimento 3 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <p class="text-gray-600 italic mb-4">"Desde o primeiro contato, a equipe foi transparente e atenciosa. O resultado final foi uma obra de arte que superou nossas expectativas de qualidade."</p>
+                    <p class="font-semibold text-indigo-700">- Carlos Henrique</p>
+                    <p class="text-sm text-gray-500">Desenvolvedor Imobiliário</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-indigo-700">Entre em Contato</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
+                Estamos prontos para transformar sua ideia em realidade. Preencha o formulário e solicite seu orçamento.
+            </p>
+            <div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <form>
+                    <div class="mb-4">
+                        <input type="text" placeholder="Seu Nome" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" placeholder="Seu Email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                    </div>
+                    <div class="mb-4">
+                        <textarea placeholder="Sua Mensagem" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-indigo-700 transition duration-300 transform hover:scale-105">
+                        Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Geração Construtora. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
